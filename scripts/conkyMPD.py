@@ -10,6 +10,7 @@ mpd_host = 'localhost'
 mpd_port = 6600
 music_dir = '/home/kl-7/Music/Artists'
 art_link = '/tmp/mpd.jpg'
+wrap_length = 33
 
 client = mpd.MPDClient()
 
@@ -39,20 +40,20 @@ if art_path and os.path.realpath(art_link) != art_path:
         art_link = None
 
 track = '#%s ' % song['track'] if song['track'] else ''
-title = textwrap.wrap(track + song['title'], 27, break_on_hyphens=False, subsequent_indent=' '*3)
+title = textwrap.wrap(track + song['title'], wrap_length, break_on_hyphens=False, subsequent_indent=' '*3)
 title[0] = title[0][len(track):]
 
-artist = textwrap.wrap('by ' + song['artist'], 27, break_on_hyphens=False, subsequent_indent=' '*3)
+artist = textwrap.wrap('by ' + song['artist'], wrap_length, break_on_hyphens=False, subsequent_indent=' '*3)
 artist[0] = artist[0][len('by '):]
 
 year = ' [%s]' % song['date'] if song['date'] else ''
-album = textwrap.wrap('from ' + song['album'] + year, 27, break_on_hyphens=False, subsequent_indent=' '*3)
+album = textwrap.wrap('from ' + song['album'] + year, wrap_length, break_on_hyphens=False, subsequent_indent=' '*3)
 album[0] = album[0][len('from '):]
 
 layout = []
 
 if os.path.isfile(art_link):
-    layout.append('${image /tmp/mpd.jpg -s 186x186 -p 3,277}\n${voffset 186}')
+    layout.append('${image /tmp/mpd.jpg -s 210x210 -p 10,277}\n${voffset 212}')
 else:
     layout.append('${voffset 7}')
 
@@ -69,7 +70,7 @@ layout.append('\n${goto 16}'.join(line.strip() for line in album))
 layout.append('${color}${font}')
 
 layout.append('\n${goto 8}${voffset 3}${color2}$mpd_elapsed${alignr}$mpd_length')
-layout.append('\n${voffset -14}${alignc}${mpd_bar 8,117}${color}')
+layout.append('\n${voffset -14}${alignc}${mpd_bar 8,160}${color}')
 
 print >> sys.stdout, ''.join(layout)
 
