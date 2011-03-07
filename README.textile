@@ -1,0 +1,1 @@
+Here is my conkyrc file for "conky":http://conky.sourceforge.net/ system monitor and my python script for fetching current song info and artwork from "MPD":http://mpd.wikia.com/wiki/Music_Player_Daemon_Wiki. Note that this particular conkyrc file is supposed to be used with "conky-colors":http://gnome-look.org/content/show.php/CONKY-colors?content=92328 customization script.
