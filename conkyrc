@@ -31,7 +31,7 @@ own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 
 alignment top_right
 gap_x 12 
-gap_y 40
+gap_y 35
 minimum_size 230 0
 maximum_width 230
 
@@ -71,13 +71,13 @@ ${voffset -1}${goto 42}${color2}${top name 3}${color}${font Droid Sans:style=Bol
 ###########
 # - MPD - #
 ###########
-${voffset 4}${font Droid Sans:style=Bold:size=8}MPD $stippled_hr${font}
-${voffset 4}${color0}${font Musicelements:size=18}z${font}${color}${voffset -8}${goto 32}Status:${alignr}${color2}$mpd_status${color}
+${voffset 2}${font Droid Sans:style=Bold:size=8}MPD $stippled_hr${font}
+${voffset 2}${color0}${font Musicelements:size=18}z${font}${color}${voffset -8}${goto 32}Status:${alignr}${color2}$mpd_status${color}
 ${if_mpd_playing}${execpi 6 /home/kl-7/.conkycolors/scripts/conkyMPD.py}$endif
 ############
 # - CLOCK- #
 ############
-${voffset 4}${font Droid Sans:style=Bold:size=8}DATE & TIME $stippled_hr${font}
+${voffset 2}${font Droid Sans:style=Bold:size=8}DATE & TIME $stippled_hr${font}
 ${voffset -4}${color2}${font Zekton:size=45}${alignc}${time %H}${voffset -10}:${voffset 10}${time %M}${font}
 ${voffset 3}${font Droid Sans:style=Bold:size=9}${alignc}${time %a, %d %b %Y}${font}${color}${voffset -4}
 ################
@@ -87,7 +87,7 @@ ${voffset 3}${font Droid Sans:style=Bold:size=9}${alignc}${time %a, %d %b %Y}${f
 ##########
 # - HD - #
 ##########
-${voffset 4}${font Droid Sans:style=Bold:size=8}HD $stippled_hr${font}
+${voffset 2}${font Droid Sans:style=Bold:size=8}HD $stippled_hr${font}
 ${voffset -2}${color0}${font Poky:size=15}y${font}${color}${offset 6}${voffset -7}Root: ${font Droid Sans:style=Bold:size=8}${color1}${fs_free_perc /}%${color}${font}
 ${voffset 2}${color0}${fs_bar 4,20 /}${color}${offset 8}${voffset -2}F: ${font Droid Sans:style=Bold:size=8}${color2}${fs_free /}${color}${font} U: ${font Droid Sans:style=Bold:size=8}${color2}${fs_used /}${color}${font} 
 ${voffset -2}${color0}${font Poky:size=15}y${font}${color}${offset 6}${voffset -7}Home: ${font Droid Sans:style=Bold:size=8}${color1}${fs_free_perc /home}%${color}${font}
@@ -101,7 +101,7 @@ ${voffset 2}${color0}${fs_bar 4,20 /media/KL_7}${color}${offset 8}${voffset -2}F
 ###############
 # - NETWORK - #
 ###############
-${voffset 4}${font Droid Sans:style=Bold:size=8}NETWORK $stippled_hr${font}
+${voffset 2}${font Droid Sans:style=Bold:size=8}NETWORK $stippled_hr${font}
 # |--WLAN0
 ${if_up wlan0}
 ${voffset -13}${color0}${font VariShapes Solid:size=14}q${font}${color}${goto 32}${voffset -6}Up: ${font Droid Sans:style=Bold:size=8}${color1}${upspeed wlan0}${color}${font} ${alignr}${color2}${upspeedgraph wlan0 8,110 7D7E60 9C9E8A}${color}
