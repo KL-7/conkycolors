@@ -70,7 +70,7 @@ layout.append('\n${goto 16}'.join(line.strip() for line in album))
 layout.append('${color}${font}')
 
 layout.append('\n${goto 8}${voffset 3}${color2}$mpd_elapsed${alignr}$mpd_length')
-layout.append('\n${voffset -14}${alignc}${mpd_bar 8,160}${color}')
+layout.append('\n${voffset -14}${alignc}${mpd_bar 8,145}${color}')
 
 print >> sys.stdout, ''.join(layout)
 

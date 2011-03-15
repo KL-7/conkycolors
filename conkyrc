@@ -96,8 +96,8 @@ ${voffset -2}${color0}${font Poky:size=15}y${font}${color}${offset 6}${voffset -
 ${voffset 2}${color0}${fs_bar 4,20 /media/Development}${color}${offset 8}${voffset -2}F: ${font Droid Sans:style=Bold:size=8}${color2}${fs_free /media/Development}${color}${font} U: ${font Droid Sans:style=Bold:size=8}${color2}${fs_used /media/Development}${color}${font} 
 ${voffset -2}${color0}${font Poky:size=15}y${font}${color}${offset 6}${voffset -7}Installs: ${font Droid Sans:style=Bold:size=8}${color1}${fs_free_perc /media/Installs}%${color}${font}
 ${voffset 2}${color0}${fs_bar 4,20 /media/Installs}${color}${offset 8}${voffset -2}F: ${font Droid Sans:style=Bold:size=8}${color2}${fs_free /media/Installs}${color}${font} U: ${font Droid Sans:style=Bold:size=8}${color2}${fs_used /media/Installs}${color}${font} 
-${voffset -2}${color0}${font Poky:size=15}y${font}${color}${offset 6}${voffset -7}KL-7: ${font Droid Sans:style=Bold:size=8}${color1}${fs_free_perc /media/KL_7}%${color}${font}
-${voffset 2}${color0}${fs_bar 4,20 /media/KL_7}${color}${offset 8}${voffset -2}F: ${font Droid Sans:style=Bold:size=8}${color2}${fs_free /media/KL_7}${color}${font} U: ${font Droid Sans:style=Bold:size=8}${color2}${fs_used /media/KL_7}${color}${font} 
+${voffset -2}${color0}${font Poky:size=15}y${font}${color}${offset 6}${voffset -7}KL-7: ${font Droid Sans:style=Bold:size=8}${color1}${fs_free_perc /media/KL-7}%${color}${font}
+${voffset 2}${color0}${fs_bar 4,20 /media/KL-7}${color}${offset 8}${voffset -2}F: ${font Droid Sans:style=Bold:size=8}${color2}${fs_free /media/KL-7}${color}${font} U: ${font Droid Sans:style=Bold:size=8}${color2}${fs_used /media/KL-7}${color}${font} 
 ###############
 # - NETWORK - #
 ###############
