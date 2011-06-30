@@ -29,8 +29,8 @@ own_window_type override
 own_window_transparent yes
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 
-alignment top_right
-gap_x 12 
+alignment top_left
+gap_x 1680
 gap_y 35
 minimum_size 230 0
 maximum_width 230

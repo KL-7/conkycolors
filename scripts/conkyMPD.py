@@ -53,7 +53,7 @@ album[0] = album[0][len('from '):]
 layout = []
 
 if os.path.isfile(art_link):
-    layout.append('${image /tmp/mpd.jpg -s 210x210 -p 10,274}\n${voffset 212}')
+    layout.append('${image /tmp/mpd.jpg -s 210x210 -p 12,274}\n${voffset 212}')
 else:
     layout.append('${voffset 7}')
 
